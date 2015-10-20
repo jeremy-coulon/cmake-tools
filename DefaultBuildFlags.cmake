@@ -7,13 +7,13 @@
 #=============================================================================
 
 if(CMAKE_COMPILER_IS_GNUCC)
-    set(CMAKE_C_FLAGS_INIT                "-Wall")
+    set(CMAKE_C_FLAGS_INIT                "-Wall --std=c11")
     set(CMAKE_C_FLAGS_RELWITHDEBINFO_INIT "-O3 -DNDEBUG -g")
     set(CMAKE_C_FLAGS_COVERAGE_INIT       "-O0 --coverage")
 endif()
 
 if(CMAKE_COMPILER_IS_GNUCXX)
-    set(CMAKE_CXX_FLAGS_INIT                "-Wall")
+    set(CMAKE_CXX_FLAGS_INIT                "-Wall --std=c++14")
     set(CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT "-O3 -DNDEBUG -g")
     set(CMAKE_CXX_FLAGS_COVERAGE_INIT       "-O0 --coverage")
 endif()
